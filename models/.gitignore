@@ -1,0 +1,6 @@
+# Create .gitignore in models directory to exclude problematic files
+@"
+face_detection_model-weights*
+face_landmark_68_model-weights.bin
+face_recognition_model-weights.bin
+"@ | Out-File models/.gitignore -Encoding UTF8
