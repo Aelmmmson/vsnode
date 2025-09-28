@@ -100,7 +100,7 @@ async function fetchAccountData(accountNumber) {
     }
     return data.approved; // Return the approved array directly
   } catch (error) {
-    logger.error(`Error fetching account data for ${accountNumber}:`, error);
+    logger.error(`Error fetching account's data for ${accountNumber}:`, error);
     throw error;
   }
 }
