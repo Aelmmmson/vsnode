@@ -1,0 +1,159 @@
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"error","message":"Unexpected error: Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:73:14)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:186:3)"}
+{"level":"error","message":"Unexpected error: Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:73:14)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:186:3)"}
+{"level":"error","message":"Unexpected error: Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:73:14)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:186:3)"}
+{"level":"error","message":"Unexpected error: Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:73:14)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:186:3)"}
+{"level":"error","message":"Unexpected error: Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:73:14)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:186:3)"}
+{"level":"error","message":"Unexpected error: Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:73:14)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\index.js:186:3)"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=1.0000"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.4838"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5279"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5333"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5636"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5487"}
+{"code":"ETIMEDOUT","level":"error","message":"Error comparing faces for account 0600017567560:","stack":"AggregateError [ETIMEDOUT]: \n    at internalConnectMultiple (node:net:1139:18)\n    at afterConnectMultiple (node:net:1712:7)"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5788"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5788"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.9569"}
+{"code":"ETIMEDOUT","level":"error","message":"Error comparing faces for account 0600017567560:","stack":"AggregateError [ETIMEDOUT]: \n    at internalConnectMultiple (node:net:1139:18)\n    at afterConnectMultiple (node:net:1712:7)"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.4515"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.4265"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.3724"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.3724"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.3724"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.4261"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.4261"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.4515"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5788"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"code":"ECONNREFUSED","level":"error","message":"Error comparing faces for account 0600017567560:","stack":"Error\n    at PromisePool.query (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\mysql2\\lib\\promise\\pool.js:36:22)\n    at C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:261:29\n    at Layer.handleRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\router\\lib\\route.js:157:13)\n    at done (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\multer\\lib\\make-middleware.js:59:7)\n    at indicateDone (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\multer\\lib\\make-middleware.js:63:68)\n    at Multipart.<anonymous> (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\multer\\lib\\make-middleware.js:187:7)\n    at Multipart.emit (node:events:518:28)\n    at emitCloseNT (node:internal/streams/destroy:148:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"}
+{"level":"error","message":"Error comparing faces for account 0600017567560: faceapi.alignFace is not a function","stack":"TypeError: faceapi.alignFace is not a function\n    at C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:290:42"}
+{"level":"error","message":"Error comparing faces for account 0600017567560: faceapi.alignFace is not a function","stack":"TypeError: faceapi.alignFace is not a function\n    at C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:290:42"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"error","message":"Error comparing faces for account 0600017567560: faceapi.alignFace is not a function","stack":"TypeError: faceapi.alignFace is not a function\n    at C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:290:42"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.9406"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.4336"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.4336"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.4549"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5413"}
+{"level":"warn","message":"No face detected in live photo for account: 0600017567560"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=0.5413"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=1.0000"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: results=[{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756394835/b2b0a8d5-17f3-43b2-be61-5c4b671b1d4a_u1xhk7.jpg\",\"isMatch\":false,\"similarity\":\"-0.0162\"},{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756735674/jimmy-fermin-bqe0J0b26RQ-unsplash_xcohot.jpg\",\"isMatch\":true,\"similarity\":\"1.0000\"}]"}
+{"level":"info","message":"Face comparison for account 0600017567560: results=[{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756394835/b2b0a8d5-17f3-43b2-be61-5c4b671b1d4a_u1xhk7.jpg\",\"isMatch\":false,\"similarity\":\"-0.0162\"},{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756735674/jimmy-fermin-bqe0J0b26RQ-unsplash_xcohot.jpg\",\"isMatch\":true,\"similarity\":\"1.0000\"}]"}
+{"level":"info","message":"Face comparison for account 0600017567560: results=[{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756394835/b2b0a8d5-17f3-43b2-be61-5c4b671b1d4a_u1xhk7.jpg\",\"isMatch\":true,\"similarity\":\"0.9406\"},{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756735674/jimmy-fermin-bqe0J0b26RQ-unsplash_xcohot.jpg\",\"isMatch\":false,\"similarity\":\"-0.0248\"}]"}
+{"level":"info","message":"Face comparison for account 0600017567560: results=[{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756394835/b2b0a8d5-17f3-43b2-be61-5c4b671b1d4a_u1xhk7.jpg\",\"isMatch\":false,\"similarity\":\"-0.0162\"},{\"faceUrl\":\"https://res.cloudinary.com/dufkynfvg/image/upload/v1756735674/jimmy-fermin-bqe0J0b26RQ-unsplash_xcohot.jpg\",\"isMatch\":true,\"similarity\":\"1.0000\"}]"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=1.0000"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=0.8775"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=1.0000"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=0.9406"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=1.0000"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=0.8775"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, bestSimilarity=0.4336"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=0.5792"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Face comparison for account 9040007857211: isMatch=false, bestSimilarity=-0.0162"}
+{"level":"info","message":"Face comparison for account 9040007857211: isMatch=true, bestSimilarity=0.5817"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=0.9406"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=1.0000"}
+{"level":"warn","message":"No face detected in live photo for account: 0600017567560"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, bestSimilarity=0.4336"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, bestSimilarity=0.5792"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.463438954248366"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.4639464923747276"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.463438954248366"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.4639464923747276"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.463438954248366"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.4639464923747276"}
+{"level":"error","message":"Error with Gemini API: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent: fetch failed","stack":"TypeError: fetch failed\n    at node:internal/deps/undici/undici:13502:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async makeRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:397:20)\n    at async generateContent (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:867:22)\n    at async C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:212:20"}
+{"level":"error","message":"Error with Gemini API: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent: fetch failed","stack":"TypeError: fetch failed\n    at node:internal/deps/undici/undici:13502:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async makeRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:397:20)\n    at async generateContent (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:867:22)\n    at async C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:212:20"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.9602331154684096"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5228706753812636"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5149808278867103"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5434469716775598"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.547047843137255"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5228706753812636"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5149808278867103"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5434469716775598"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.547047843137255"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.6570269281045751"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.6228949019607843"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=false, similarity=0.1127"}
+{"level":"info","message":"Face comparison for account 0600017567560: isMatch=true, similarity=1.0000"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.40025525054466227"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"error","message":"Error with Gemini API: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent: fetch failed","stack":"TypeError: fetch failed\n    at node:internal/deps/undici/undici:13502:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async makeRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:397:20)\n    at async generateContent (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:867:22)\n    at async C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:224:20"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"error","message":"Error fetching account data for 0600017567560: Invalid response format from external API","stack":"Error: Invalid response format from external API\n    at fetchAccountData (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:94:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:269:25"}
+{"level":"error","message":"Error comparing faces for account 0600017567560: Invalid response format from external API","stack":"Error: Invalid response format from external API\n    at fetchAccountData (C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:94:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:269:25"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5151199128540305"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.5153493681917212"}
+{"level":"info","message":"Server running at http://localhost:7007"}
+{"level":"info","message":"TensorFlow.js backend set to CPU"}
+{"level":"info","message":"Face models loaded successfully"}
+{"level":"error","message":"Error with Gemini API: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.","stack":"Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.\n    at handleResponseNotOk (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:434:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async makeRequest (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:403:9)\n    at async generateContent (C:\\Users\\ander\\Downloads\\vsnode\\node_modules\\@google\\generative-ai\\dist\\index.js:867:22)\n    at async C:\\Users\\ander\\Downloads\\vsnode\\combined-server.js:226:20","status":503,"statusText":"Service Unavailable"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.3265548583877995"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.35064226579520696"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.28325856209150324"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.3064513289760349"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.11128749455337694"}
+{"level":"info","message":"Cheque processed successfully"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.31446230936819175"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.3380318954248366"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.2660500217864924"}
+{"level":"info","message":"Signature comparison completed for account: unknown, similarity: 0.2891959041394335"}
