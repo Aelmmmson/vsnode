@@ -5,13 +5,15 @@ const multer = require('multer');
 const sharp = require('sharp');
 const cors = require('cors');
 const axios = require('axios');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
 const bodyParser = require('body-parser');
 const faceapi = require('face-api.js');
 const canvas = require('canvas');
 const tf = require('@tensorflow/tfjs');
 const { Canvas, Image, ImageData } = canvas;
 const winston = require('winston');
+
+// LM Studio SDK Imports
+const { Chat, LMStudioClient } = require('@lmstudio/sdk');
 
 // Setup logging
 const logger = winston.createLogger({
@@ -156,22 +158,38 @@ const uploadCheque = multer({
   limits: { fileSize: 20 * 1024 * 1024 }
 });
 
-const geminiApiKey = process.env.GEMINI_API_KEY;
-if (!geminiApiKey) {
-  logger.error('GEMINI_API_KEY is not set in the .env file.');
-  process.exit(1);
-}
-const genAI = new GoogleGenerativeAI(geminiApiKey);
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
+// JSON Schema for Cheque Extraction
+const chequeSchema = {
+  type: "object",
+  properties: {
+    PayeeName: { type: ["string", "null"] },
+    PayerAccountHolderName: { type: ["string", "null"] },
+    AmountFigures: { type: ["string", "null"] },
+    AmountWords: { type: ["string", "null"] },
+    AmountMismatch: { type: ["string", "null"] },
+    Date: { type: ["string", "null"] },
+    AccountNumber: { type: ["string", "null"] },
+    BankName: { type: ["string", "null"] },
+    BankBranch: { type: ["string", "null"] },
+    RequiredSignatures: { type: ["string", "null"] },
+    SignaturesPresent: { type: ["string", "null"] },
+    SignatureStatus: { type: ["string", "null"] },
+    MICR: { type: ["string", "null"] },
+    CheckNumber: { type: ["string", "null"] },
+    RoutingNumber: { type: ["string", "null"] },
+    BankCode: { type: ["string", "null"] }
+  },
+  required: [],
+  additionalProperties: false
+};
 
-function fileToGenerativePart(buffer, mimeType) {
-  return {
-    inlineData: {
-      data: buffer.toString('base64'),
-      mimeType
-    },
-  };
-}
+// System prompt adapted for cheque extraction
+const systemPrompt = `You are a precise cheque data extractor. Analyze handwritten/printed text carefully.
+- Assign exact values from the image; ignore struck-through or cancelled text.
+- Use null for unclear, empty, or non-applicable fields.
+- Empty fields: empty string; empty dates: null.
+- For amounts: Match figures vs. words strictly (AmountMismatch: "Yes" if mismatch, "No" otherwise).
+- Output ONLY valid JSON matching the provided schema.`;
 
 app.post('/upload-cheque', uploadCheque.single('chequeImage'), async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No image file uploaded.' });
@@ -179,54 +197,36 @@ app.post('/upload-cheque', uploadCheque.single('chequeImage'), async (req, res) 
   try {
     const imageBuffer = req.file.buffer;
     const mimeType = req.file.mimetype;
-    const imagePart = fileToGenerativePart(imageBuffer, mimeType);
+    const base64Image = imageBuffer.toString('base64');
 
-    const prompt = `Analyze this bank cheque image meticulously and extract the following information. Pay close attention to both printed and handwritten fields. Provide very precise and accurate details.
+    // LM Studio SDK integration (like the working code)
+    const client = new LMStudioClient();
+    const model = await client.llm.model("google/gemma-3-12b"); // Use one of your loaded models; switch to vision model ID when loaded
 
-1. **Payee Name**: The full name of the person or entity to whom the cheque is made payable. This is often handwritten. If it says "CASH" or "SELF", extract that.
-2. **Payer/Account Holder Name**: The full name of the individual or entity whose bank account the cheque is drawn from. This is typically pre-printed or typed.
-3. **Amount in Figures**: The numerical amount of the cheque, including currency symbol (e.g., "GHS 1,234.50" or "$500.00").
-4. **Amount in Words**: The amount of the cheque written out in words (e.g., "One Thousand Two Hundred Thirty-Four Ghana Cedis and Fifty Pesewas").
-5. **Amount Mismatch**: Determine if the "Amount in Figures" and "Amount in Words" clearly do NOT match. State "Yes" if there's a mismatch, "No" if they match or if either is unclear/missing preventing a comparison.
-6. **Date**: The date the cheque was issued (e.g., "August 3, 2025" or "03/08/2025").
-7. **Account Number**: The bank account number.
-8. **Bank Name**: The full name of the issuing bank.
-9. **Bank Branch**: The specific branch name of the bank, if discernible.
-10. **Required Signatures**: How many signatures are expected for this cheque to be valid (e.g., "1", "2", "UNKNOWN" if not clearly indicated on the cheque itself).
-11. **Signatures Present**: The actual number of distinct signatures physically visible on the cheque.
-12. **Signature Status**: Based on comparison: "VALID" (present >= required, or if required is UNKNOWN and at least one is present), "INSUFFICIENT" (present < required), "NONE" (no signatures present), "UNSURE" (if unable to confidently determine required or present).
-13. **MICR**: MICR number.
-14. **Check Number**: The check number; normally a 6-digit pre-printed on the cheque below the routing number at the top right or first set of numbers in the MICR (e.g., 090125).
-15. **Routing Number**: The routing number; normally a 6-digit pre-printed on the cheque above the check number at the top right or second set of digits in the MICR (e.g., 000347).
-16. **Bank Code**: Usually the last set 2-digit number in the MICR.
+    const chat = Chat.from([
+      {
+        role: "system",
+        content: systemPrompt,
+      },
+      {
+        role: "user",
+        content: "Analyze this bank cheque image and extract the following information precisely:\n\n1. **Payee Name**: Full name or \"CASH\"/\"SELF\".\n2. **Payer/Account Holder Name**: Pre-printed account holder.\n3. **Amount in Figures**: Numerical with currency (e.g., \"GHS 1,234.50\").\n4. **Amount in Words**: Written out (e.g., \"One Thousand...\").\n5. **Amount Mismatch**: \"Yes\" if mismatch, \"No\" if match/unclear.\n6. **Date**: Issued date (e.g., \"August 3, 2025\").\n7. **Account Number**: Bank account.\n8. **Bank Name**: Issuing bank.\n9. **Bank Branch**: Branch if visible.\n10. **Required Signatures**: Expected count (e.g., \"1\", \"2\", \"UNKNOWN\").\n11. **Signatures Present**: Visible distinct signatures.\n12. **Signature Status**: \"VALID\" (present >= required or at least one if UNKNOWN), \"INSUFFICIENT\", \"NONE\", \"UNSURE\".\n13. **MICR**: Full MICR line.\n14. **Check Number**: 6-digit (e.g., 090125).\n15. **Routing Number**: 6-digit (e.g., 000347).\n16. **Bank Code**: Last 2 digits in MICR.\n\nUse the exact schema provided.",
+        images: await Promise.all([
+          client.files.prepareImageBase64("cheque_img_0", base64Image)
+        ]),
+      },
+    ]);
 
-**Output Format**: Provide the information as a strict JSON object. If a field cannot be confidently extracted or is not applicable, use \`null\` for its value.
-\`\`\`json
-{
-  "PayeeName": null,
-  "PayerAccountHolderName": null,
-  "AmountFigures": null,
-  "AmountWords": null,
-  "AmountMismatch": null,
-  "Date": null,
-  "AccountNumber": null,
-  "BankName": null,
-  "BankBranch": null,
-  "RequiredSignatures": null,
-  "SignaturesPresent": null,
-  "SignatureStatus": null,
-  "MICR": null,
-  "CheckNumber": null,
-  "RoutingNumber": null,
-  "BankCode": null
-}
-\`\`\`
-`;
+    const result = await model.respond(chat, {
+      structured: {
+        type: "json",
+        jsonSchema: chequeSchema,
+      },
+    });
 
-    const result = await model.generateContent([prompt, imagePart]);
-    const response = await result.response;
-    let extractedText = response.text();
+    let extractedText = result.content.trim();
 
+    // Clean up if wrapped in code blocks
     if (extractedText.startsWith('```json')) extractedText = extractedText.substring(7);
     if (extractedText.endsWith('```')) extractedText = extractedText.substring(0, extractedText.length - 3);
     extractedText = extractedText.trim();
@@ -234,16 +234,20 @@ app.post('/upload-cheque', uploadCheque.single('chequeImage'), async (req, res) 
     let parsedData;
     try {
       parsedData = JSON.parse(extractedText);
-      logger.info('Cheque processed successfully');
+      logger.info('Cheque processed successfully via local AI');
     } catch (jsonError) {
-      logger.error('Gemini response not valid JSON:', extractedText, jsonError);
+      logger.error('Local AI response not valid JSON:', extractedText, jsonError);
       return res.status(500).json({ error: 'AI output not JSON', rawResponse: extractedText });
     }
 
     res.json({ success: true, extractedData: parsedData });
   } catch (error) {
-    logger.error('Error with Gemini API:', error);
-    res.status(500).json({ error: 'Failed to process image with AI' });
+    logger.error('Error with local AI server:', error);
+    if (error.message && error.message.includes('vision') || error.statusCode === 400 || error.statusCode === 500) {
+      logger.warn('Model likely lacks vision support. Load a vision model (e.g., LLaVA) in LM Studio.');
+      return res.status(503).json({ error: 'Local AI server error (load a vision model like LLaVA in LM Studio for image processing)' });
+    }
+    res.status(500).json({ error: 'Failed to process image with local AI', details: error.message });
   }
 });
 
